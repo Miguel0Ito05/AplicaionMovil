@@ -2,7 +2,9 @@
 
 INTEGRANTES:
 Luis Miguel Castro Villegas
+
 Juan Camilo Bustamante Rodas
+
 Carlos Eduardo Palacios
 
 ## Getting Started
