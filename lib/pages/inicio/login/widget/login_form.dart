@@ -21,6 +21,7 @@ class _LoginFormState extends State<LoginForm> {
     super.dispose();
   }
 
+  // logica de login
   void _login() {
     String email = emailController.text;
     String password = passwordController.text;
@@ -28,7 +29,7 @@ class _LoginFormState extends State<LoginForm> {
     // datos ingresados
     debugPrint("Correo: $email, Contraseña: $password");
 
-    // Puedes hacer validaciones o llamar a  API aquí
+    // hacer validaciones o llamar a  API aquí
     if (email.isEmpty || password.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Por favor ingresa todos los datos")),
@@ -47,11 +48,11 @@ class _LoginFormState extends State<LoginForm> {
       width: 300,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.95),
+        color: Colors.white.withValues(),
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(),
             blurRadius: 8,
             offset: const Offset(2, 4),
           ),
@@ -78,7 +79,7 @@ class _LoginFormState extends State<LoginForm> {
           ),
           const SizedBox(height: 20),
 
-          // Botón iniciar
+          // boton iniciar
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
@@ -92,6 +93,11 @@ class _LoginFormState extends State<LoginForm> {
                 style: TextStyle(color: Colors.white, fontSize: 16),
               ),
             ),
+          ),
+
+          const Text(
+            "¿Olvidaste tu contraseña?",
+            style: TextStyle(color: Colors.blue, fontSize: 14),
           ),
         ],
       ),

@@ -1,4 +1,4 @@
-import 'package:aplicacionmovil/pages/inicio/login.dart';
+import 'package:aplicacionmovil/pages/inicio/Inicio.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,9 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(fontFamily: 'SF-Pro-Text'),
 
-      home: const Login(),
+      home: const Inicio(),
     );
   }
 }

@@ -1,4 +1,4 @@
-import 'package:aplicacionmovil/pages/inicio/widget/login_form.dart';
+import 'package:aplicacionmovil/pages/inicio/login/widget/login_form.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -10,13 +10,13 @@ class Login extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // Fondo con imagen (puedes cambiarlo por un mapa real)
+          // Fondo con imagen
           Image.network(
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbT-cpO_BConn0dH-m2ybbBNT5LUEpgAEUSg&s",
             fit: BoxFit.cover,
           ),
 
-          // Formulario de login como componente
+          // Formulario de login
           const Center(child: LoginForm()),
         ],
       ),
