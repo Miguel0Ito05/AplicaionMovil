@@ -1,3 +1,4 @@
+import 'package:aplicacionmovil/pages/inicio/Registro/registro.dart';
 import 'package:aplicacionmovil/pages/inicio/login/Login.dart';
 import 'package:flutter/material.dart';
 
@@ -60,7 +61,7 @@ class InicioForm extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Login()),
+                  MaterialPageRoute(builder: (context) => const Registro()),
                 );
               },
               style: ElevatedButton.styleFrom(
