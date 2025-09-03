@@ -57,8 +57,10 @@ Actualmente la app cuenta con las pantallas principales funcionales y un diseño
 
 ### Pantalla de home ![Home](assets/screenshots/home.png)
 
+---
 
 ## 📂 Estructura del Proyecto
+
 ```plaintext
 lib/
 ├── main.dart
