@@ -30,16 +30,17 @@ Su objetivo principal es implementar pantallas básicas de autenticación y nave
 ## 📂 Estructura del Proyecto
 ```plaintext
 lib/
- ├── main.dart
- ├── pages/
- │    ├── login
- │    ├── register
- │    ├── home
- │    └── inicio
- ├── widgets/
- │    ├── buttons
- │    ├── custom_text
- │    └── auth_card
+├── main.dart
+├── pages/
+│ ├── login
+│ ├── register
+│ ├── home
+│ └── inicio
+└── widgets/
+├── buttons
+├── custom_text
+└── auth_card
+ 
 
 
 ---
