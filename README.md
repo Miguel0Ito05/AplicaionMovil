@@ -43,7 +43,7 @@ flutter run
 ## 📌 Estado actual
 
 Actualmente la app cuenta con las pantallas principales funcionales y un diseño mejorado.
-📍 Próxima entrega: integración de la API de Google Maps.
+📍 Próxima entrega: integración de la API de Google Maps
 
 ---
 
