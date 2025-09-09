@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'widget_home/search_bar.dart';
 import 'widget_home/profile_avatar.dart';
 
@@ -36,3 +36,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+*/

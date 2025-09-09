@@ -29,7 +29,7 @@ class InicioForm extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             // Botón cerrar dentro del cuadro
-            Align(
+            /*Align(
               alignment: Alignment.topRight,
               child: IconButton(
                 icon: const Icon(Icons.close, color: Colors.black),
@@ -37,7 +37,7 @@ class InicioForm extends StatelessWidget {
                   Navigator.pushReplacementNamed(context, '/home');
                 },
               ),
-            ),
+            ),*/
 
             const Text(
               "BIENVENIDOS",
@@ -87,6 +87,26 @@ class InicioForm extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 15),
                 ),
                 child: const Text("Registrarse"),
+              ),
+            ),
+
+            const SizedBox(height: 20),
+
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, '/home');
+                },
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.white, // texto blanco
+                  side: const BorderSide(color: Colors.white), // borde blanco
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: const EdgeInsets.symmetric(vertical: 15),
+                ),
+                child: const Text("Usar la aplicación sin registrarme"),
               ),
             ),
           ],
