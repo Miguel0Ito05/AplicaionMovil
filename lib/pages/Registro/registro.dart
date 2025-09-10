@@ -1,5 +1,6 @@
-import 'package:aplicacionmovil/pages/Registro/widget_registro/registro_form.dart';
+import 'package:aplicacionmovil/widgets/theme_toggle_button.dart';
 import 'package:flutter/material.dart';
+import 'package:aplicacionmovil/pages/Registro/widget_registro/registro_form.dart';
 
 class Registro extends StatelessWidget {
   const Registro({super.key});
@@ -7,20 +8,20 @@ class Registro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Stack(
-          children: [
-            Image.asset(
-              'assets/pru.jpg',
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
-              fit: BoxFit.cover,
-            ),
-            Container(child: Column(children: [])),
+      body: Stack(
+        children: [
+          Image.asset(
+            'assets/pru.jpg',
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            fit: BoxFit.cover,
+          ),
 
-            const Center(child: RegistroForm()),
-          ],
-        ),
+          // Botón modo oscuro arriba a la derecha
+          const Positioned(top: 40, right: 20, child: ThemeToggleButton()),
+
+          const Center(child: RegistroForm()),
+        ],
       ),
     );
   }

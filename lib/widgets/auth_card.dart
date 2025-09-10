@@ -8,6 +8,8 @@ class AuthCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
+
     return LayoutBuilder(
       builder: (context, constraints) {
         bool isMobile = constraints.maxWidth < 600;
@@ -23,7 +25,9 @@ class AuthCard extends StatelessWidget {
             width: formWidth,
             padding: EdgeInsets.all(padding),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: isDarkMode
+                  ? Colors.grey[850] // fondo en oscuro
+                  : const Color.fromARGB(255, 5, 218, 111), // fondo en claro
               borderRadius: BorderRadius.circular(15),
               boxShadow: [
                 BoxShadow(
@@ -41,6 +45,7 @@ class AuthCard extends StatelessWidget {
                   style: TextStyle(
                     fontSize: fontSizeTitle,
                     fontWeight: FontWeight.bold,
+                    color: isDarkMode ? Colors.white : Colors.black,
                   ),
                 ),
                 const SizedBox(height: 20),

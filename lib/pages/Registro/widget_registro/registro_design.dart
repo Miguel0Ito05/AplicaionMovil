@@ -38,11 +38,9 @@ class RegistroDesign extends StatelessWidget {
         ),
         const SizedBox(height: 20),
 
-        //  botón primario
         PrimaryButton(text: "REGISTRAR", onPressed: onSubmit),
         const SizedBox(height: 15),
 
-        // botón secundario
         SecondaryButton(text: "VOLVER", onPressed: onBack),
       ],
     );

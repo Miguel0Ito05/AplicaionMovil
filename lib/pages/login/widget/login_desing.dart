@@ -33,11 +33,9 @@ class LoginDesign extends StatelessWidget {
         ),
         const SizedBox(height: 20),
 
-        //  botón primario
         PrimaryButton(text: "INICIAR", onPressed: onLogin),
         const SizedBox(height: 15),
 
-        // botón secundario
         SecondaryButton(text: "VOLVER", onPressed: onBack),
       ],
     );
