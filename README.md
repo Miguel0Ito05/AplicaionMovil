@@ -13,11 +13,14 @@ Su objetivo principal es implementar pantallas básicas de autenticación y nave
 
 ---
 
-## 🚀 Funcionalidades Implementadas
+## 🚀 Funcionalidades Implementadas (actualizado 2)
 - ✅ **Ventanas principales:** Inicio, Registro, Login y Home.  
-- ✅ **Opción para cerrar el registro**, permitiendo que los usuarios omitan esta pantalla si no desean registrarse.  
+- ✅ **Opción para cerrar el registro** y permitir que los usuarios omitan esta pantalla si no desean registrarse.  
 - ✅ **Diseño responsivo**, asegurando que la aplicación se adapte correctamente a distintos tamaños de pantalla.  
 - ✅ **Widgets globales reutilizables**, que mejoran la lógica, el mantenimiento y la consistencia del diseño de la app.  
+- ✅ **Botón de modo oscuro**, presente en todas las pantallas, que permite cambiar los colores de la aplicación a una paleta de grises oscuros.  
+- ✅ **Integración con la API de Google Maps**, mostrando un mapa centrado en Buenaventura con un marcador inicial.  
+- ✅ **Mejoras de lógica y estructura**, centralizando el uso de `AuthCard` y botones globales para mantener un diseño uniforme.  
 
 ---
 
@@ -41,9 +44,13 @@ flutter run
 ---
 
 ## 📌 Estado actual
+Actualmente la app cuenta con:
+- Pantallas principales funcionales.  
+- Modo oscuro aplicado en todas las vistas.  
+- Mapa interactivo con Google Maps integrado.  
+- Diseño consistente gracias al uso de widgets globales.  
 
-Actualmente la app cuenta con las pantallas principales funcionales y un diseño mejorado.
-📍 Próxima entrega: integración de la API de Google Maps
+Próxima entrega: integración de rutas personalizadas en Google Maps y manejo de usuarios.
 
 ---
 
@@ -57,7 +64,12 @@ Actualmente la app cuenta con las pantallas principales funcionales y un diseño
 
 ### Pantalla de home ![Home](assets/screenshots/home.png)
 
+### Pantalla de Inicio con Modo Oscuro ![Home](assets/screenshots/modoOscuro.png)
+
+### Pagina home con Mapa de Google Implementado API ![Home](assets/screenshots/mapa.png)
+
 ---
+
 
 ## 📂 Estructura del Proyecto
 
